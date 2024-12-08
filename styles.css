@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
 box-sizing: border-box;
 margin: 0;
@@ -18,8 +20,35 @@ padding: 0;
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    --purple: #5722CD; /* palet name: Chrysler blue */
+    --blue: #4B49E8; /* palet name: Majorelle Blue */
+    --roze: #ED4385; /* palet name: French Rose */
+    --night: #0C0C0C; /* palet name: Night, used for regular text  */
+    --light-purple: #F2F0FF; /* palet name: Magnolia, used for big floating words, like "hello" and "services" */
+    /* Exceptions: */
+    --light-grey: #F3F6F9; /* used for background-color of the projects */
+    --grey: #7A7A7A; /* used for text service-tile
 
+    /* for regular text: */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-color: var(--night)
+}
 /* ------------------------------- 2. Typography ----------------------------------- */
+/* for headings: */
+h1, h2, h3, h4, h5, h6 .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+/* for regular text: */
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
