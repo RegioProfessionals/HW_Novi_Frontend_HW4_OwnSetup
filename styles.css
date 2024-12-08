@@ -34,7 +34,10 @@ padding: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-color: var(--night)
+
+}
+body{
+    color: var(--night);
 }
 /* ------------------------------- 2. Typography ----------------------------------- */
 /* for headings: */
@@ -48,6 +51,8 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: var(--night);
+
 }
 
 /* ------------------------------- 3. Layout --------------------------------------- */
