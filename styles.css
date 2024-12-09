@@ -21,9 +21,9 @@ padding: 0;
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 :root {
-    --purple: #5722CD; /* palet name: Chrysler blue */
+    --purple: #5722CD; /* palet name: Chrysler Blue */
     --blue: #4B49E8; /* palet name: Majorelle Blue */
-    --roze: #ED4385; /* palet name: French Rose */
+    --pink: #ED4385; /* palet name: French Rose */
     --night: #0C0C0C; /* palet name: Night, used for regular text  */
     --light-purple: #F2F0FF; /* palet name: Magnolia, used for big floating words, like "hello" and "services" */
     /* Exceptions: */
