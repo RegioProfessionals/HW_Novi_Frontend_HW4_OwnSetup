@@ -103,7 +103,6 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     background-position: top;
 }
 .inner-container-header {
-    border: 1px solid var(--light-purple);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +113,6 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     padding: 100px 0 100px 0;
     color: var(--light-purple);
     position: relative;
-    border: 1px dashed var(--purple);
 }
 
 .inner-container-section-1 {
@@ -149,7 +147,7 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     gap: 60px;
     /*border: 5px dashed darkblue;*/
     align-items: stretch;
-    flex-basis: 100px;
+    flex-basis: 400px;
 }
 article {
     margin-bottom: 120px;
@@ -159,29 +157,23 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 300px;
-    gap: 60px;
-    flex: 0 0 300px;
+    max-width: 500px;
+    gap: 20px;
+    flex: 0 0 500px;
 
 }
 span {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    flex: 1 0 500px;
+    flex: 1 0 300px;
     /*border: 4px dashed #000;*/
     box-shadow: 0 20px 20px rgba(122, 122, 122, 0.4)
  }
 .squiggle {
-    max-width: 40px;
+    max-width: 60px;
 }
-.testen {
-    display: flex;
-    max-width: 300px;
-    flex: 0 0 100%;
-    align-items: stretch;
-    border: 4px dashed darkblue;
-}
+
 
 
 
