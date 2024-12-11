@@ -129,36 +129,38 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     color: var(--purple);
     position: relative;
 }
-.outer-container-article {
+
+.article-section {
     background-size: cover;
     background-position: top;
     background-color: var(--light-grey);
-    border: 1px dashed var(--night);
-    /*display: flex;*/
-
-}
-.inner-container-article {
-    display: flex;
-    justify-content: flex-start;
-    gap: 0px;
-    border: 5px dashed darkred;
-    align-items: stretch;
-}
-.article-section {
     padding-top: 6rem;
     padding-bottom: 6rem;
     padding-left: 8rem;
     padding-right: 8rem;
     border: 6px solid deepskyblue;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.inner-container-article {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    /*border: 5px dashed darkblue;*/
+    align-items: stretch;
+    flex-basis: 100px;
+}
+article {
+    margin-bottom: 120px;
 }
 .inner-container-article-text {
-    border: 1px dashed orangered;
+    border: 3px dashed orangered;
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 300px;
-    gap: 20px;
+    gap: 60px;
     flex: 0 0 300px;
 
 }
@@ -166,8 +168,9 @@ span {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    flex: 0 0 300px;
-    border: 4px dashed #000;
+    flex: 1 0 500px;
+    /*border: 4px dashed #000;*/
+    box-shadow: 0 20px 20px rgba(122, 122, 122, 0.4)
  }
 .squiggle {
     max-width: 40px;
