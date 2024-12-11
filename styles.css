@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -20,6 +16,13 @@ padding: 0;
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --purple: #5722CD; /* palet name: Chrysler Blue */
     --blue: #4B49E8; /* palet name: Majorelle Blue */
@@ -28,42 +31,216 @@ padding: 0;
     --light-purple: #F2F0FF; /* palet name: Magnolia, used for big floating words, like "hello" and "services" */
     /* Exceptions: */
     --light-grey: #F3F6F9; /* used for background-color of the projects */
-    --grey: #7A7A7A; /* used for text service-tile
+    --grey: #7A7A7A;
+    /* used for text service-tile */
+
+   }
 
     /* for regular text: */
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-
-}
-body{
     color: var(--night);
 }
+
+a:link {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+
+/*main {*/
+/*        max-width: 1000px;*/
+/*        margin: 0 auto;*/
+/*}*/
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 /* for headings: */
+
 h1, h2, h3, h4, h5, h6 .merriweather-bold {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
 }
+
 /* for regular text: */
+
 .roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: var(--night);
-
+}
+/* ------------------------------- 3. Layout --------------------------------------- */
+/* --------------- 3.1 Reusables ----------------------- */
+.hero-merriweather-3rem {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.hero-merriweather-2rem {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.hero-roboto-2rem {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.hero-roboto-15rem-night {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: var(--night);
+}
+.outer-container-header {
+    background-size: cover;
+    background-position: top;
+}
+.inner-container-header {
+    border: 1px solid var(--light-purple);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 100px 0 100px 0;
+    color: var(--light-purple);
+    position: relative;
+    border: 1px dashed var(--purple);
 }
 
-/* ------------------------------- 3. Layout --------------------------------------- */
+.inner-container-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 100px 40px 100px 40px;
+    color: var(--purple);
+    position: relative;
+}
+.outer-container-article {
+    background-size: cover;
+    background-position: top;
+    background-color: var(--light-grey);
+    border: 1px dashed var(--night);
+    /*display: flex;*/
 
-/* --------------- 3.1 Reusables ----------------------- */
+}
+.inner-container-article {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0px;
+    border: 5px dashed darkred;
+    align-items: stretch;
+}
+.article-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    border: 6px solid deepskyblue;
+
+}
+.inner-container-article-text {
+    border: 1px dashed orangered;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+    gap: 20px;
+    flex: 0 0 300px;
+
+}
+span {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex: 0 0 300px;
+    border: 4px dashed #000;
+ }
+.squiggle {
+    max-width: 40px;
+}
+.testen {
+    display: flex;
+    max-width: 300px;
+    flex: 0 0 100%;
+    align-items: stretch;
+    border: 4px dashed darkblue;
+}
+
+
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
+main {
+    border: 1px dashed var(--light-purple);
+}
 
 /* --------------- 4.1 Header ------------------------- */
+
+header {
+    background-size: cover;
+    background-position: top;
+    background: linear-gradient(-20deg, var(--purple), var(--blue));
+}
+ul {
+
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 4rem;
+    list-style-type: none;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--light-purple);
+    padding: 1rem 4rem;/*20px 200px 20px 200px; */
+    font-size: 1.5rem;
+}
+
+/*.hero-content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 20px;*/
+/*    padding: 100px 0 200px 0;*/
+/*    margin: 0 auto;*/
+/*    max-width: 1000px;*/
+/*    align-items: center;*/
+/*    text-align: center;*/
+/*    color: var(--light-purple);*/
+/*    position: relative;*/
+/*}*/
+
+.pink-button {
+    background-color: var(--pink);
+    color: var(--light-purple);
+    font-size: 2rem;
+    padding: 15px 25px;
+    border: none;
+    max-width: 400px;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 20px 20px rgba(87, 34, 205, 0.9); /* to create blurr-effect var(--purple) needs to be tranlated into rgba.
+    This means that the variable color also needs to be changed here, unless we can calculate #hex colors into rgb. */
+}
+.header-image {
+    position: relative;
+    bottom: -4px;
+    text-align: center;
+}
+
 
 /* --------------- 4.2 Introduction ------------------- */
 

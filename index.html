@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css"> <!-- HTML connected to styles.css -->
-    <title>Rolling Stone Magazine</title>
+    <title>Rekupe Los Angeles</title>
 </head>
 <body>
 <header> <!-- background-color of header and navigation bar are the same. This means that the navigation bar can be part of the header.
@@ -16,52 +16,61 @@ If this changes in the future than the code needs to be changed. -->
         </ul>
     </nav>
     <div class="inner-container-header">
-        <p>Your website is an investment in the success of your business.
-            We are here to help you succeed.</p>
-        <button type="button">Let's work together</button>
+        <p class="hero-merriweather-3rem">Your website is an investment in the success of your business.<p>
+            <p class="hero-roboto-2rem">We are here to help you succeed.</p>
+        <button class="pink-button" type="button">Let's work together</button>
+    </div>
+    <div class="header-image">
+        <img src="assets/squiggle_line_stripe.svg" alt="Graphic vector image">
     </div>
 </header>
 
 <main>
-    <section class="section1-outer-container-1">
-        <div class="inner-container-1">
-            <p>Rekupe is a digital agency in Los Angeles. We use strategic UX, SEO optimization and beautiful visual
-                designs to help your business grow. We see every project as a fresh opportunity, pushing ourselves to
-                create new digital experiences. Have a question? Click here to contact us!</p>
+    <section class="outer-container-header">
+        <div class="inner-container-section-1 ">
+            <p class="hero-merriweather-2rem">Rekupe is a digital agency in Los Angeles.</p>
+            <p class="hero-merriweather-2rem">We use strategic UX, SEO optimization and beautiful visual
+                designs to help your business grow.</p>
+            <p class="hero-merriweather-2rem">We see every project as a fresh opportunity, pushing ourselves to
+                create new digital experiences.</p>
+            <p class="hero-roboto-15rem-night">Have a question? <a href="#contact-us">Click here</a> to contact us!</p>
         </div>
     </section>
 
-    <section class="section2-outer-container-2">
-        <div class="inner-container-2">
-            <article class="article1">
-                <div>
-                    <h2>Rolling Stone</h2>
-                    <img>
+    <section class="outer-container-article">
+        <div class="article-section">
+            <article class="inner-container-article">
+                <div class="inner-container-article-text">
+                    <h2 class="hero-merriweather-2rem">Rolling Stone</h2>
+                    <img class="squiggle" src="assets/squiggle_line.svg" alt="Graphic vector image">
                     <p>You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
                         icon.</p>
                     <link>
                 </div>
-                <span><img src="assets/work-image-01.jpeg"></span>
+                <span><img src="assets/work-image-01.jpeg" alt="Footage website and magazine RollingStone"></span>
             </article>
-            <article class="article2">
-                <span><img src="assets/work-image-02.jpeg"></span>
-                <div>
+            <article class="inner-container-article">
+                <span><img src="assets/work-image-02.jpeg" alt="Footage website and magazine Variety"></span>
+                <div class="inner-container-article-text">
                     <h2>Variety</h2>
-                    <img>
+                    <img class="squiggle" src="assets/squiggle_line.svg" alt="Graphic vector image">
                     <p>Variety is an industry leader for breaking entertainment news, reviews and box office results
                         with archive of content dating back to 1905.</p>
                     <link>
                 </div>
             </article>
-            <article class="article3">
-                <div class="inner-container-3">
+            <article class="inner-container-article">
+                <div class="inner-container-article-text">
                     <h2>Worth</h2>
-                    <img>
+                    <img class="squiggle" src="assets/squiggle_line.svg" alt="Graphic vector image">
                     <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
                     <link>
                 </div>
-                <span><img src="assets/work-image-03.jpeg"></span>
+<!--                <span><img src="assets/work-image-03.jpeg" alt="Footage magazine Variety500"></span>-->
             </article>
+            <div class="testen">
+            <img src="assets/work-image-03.jpeg" alt="Footage magazine Variety500">
+            </div>
         </div>
     </section>
 
@@ -115,7 +124,7 @@ If this changes in the future than the code needs to be changed. -->
     </section>
     <section class="section4-outer-container-4">
         <div class="inner-container-4">
-            <form>
+            <form id="contact-us">
                 <label for="Name:">Name</label>
                 <input type="text" id="Name:" name="name" placeholder="Name">
                 <!--- be aware that the color of the placeholder is grey and you possibly have to change it with pseudo- ::placeholder in CSS -->
