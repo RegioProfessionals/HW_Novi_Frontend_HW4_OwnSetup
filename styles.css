@@ -49,12 +49,6 @@ a:link {
     text-decoration: none;
 }
 
-
-/*main {*/
-/*        max-width: 1000px;*/
-/*        margin: 0 auto;*/
-/*}*/
-
 /* ------------------------------- 2. Typography ----------------------------------- */
 /* for headings: */
 
@@ -98,22 +92,6 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     padding-bottom: 2rem;
     color: var(--night);
 }
-.outer-container-header {
-    background-size: cover;
-    background-position: top;
-}
-.inner-container-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    gap: 20px;
-    padding: 100px 0 100px 0;
-    color: var(--light-purple);
-    position: relative;
-}
 
 .inner-container-section-1 {
     display: flex;
@@ -127,53 +105,76 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     color: var(--purple);
     position: relative;
 }
-
-.article-section {
+.outer-container-article {
     background-size: cover;
     background-position: top;
     background-color: var(--light-grey);
+}
+.article-section {
+    background-size: cover;
     padding-top: 6rem;
     padding-bottom: 6rem;
     padding-left: 8rem;
     padding-right: 8rem;
-    border: 6px solid deepskyblue;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .inner-container-article {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
-    /*border: 5px dashed darkblue;*/
-    align-items: stretch;
-    flex-basis: 400px;
+    /*gap: 350px;*/
+    /*align-items: stretch;*/
+    width: 100%;
 }
 article {
     margin-bottom: 120px;
 }
 .inner-container-article-text {
-    border: 3px dashed orangered;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 500px;
-    gap: 20px;
-    flex: 0 0 500px;
-
+    gap: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 500px;
+    min-width: 350px;
+    flex: 0 1 500px;
+    position: relative;
+}
+.inner-container-article-text-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+    padding-left: 60px;
+    gap: 30px;
+    width: 500px;
+    min-width: 350px;
+    flex: 0 1 500px;
 }
 span {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    flex: 1 0 300px;
-    /*border: 4px dashed #000;*/
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    /*width: 1000px;*/
+    flex: 1 1 400px;
+    min-width: 400px;
+    border: 4px dashed #000;
     box-shadow: 0 20px 20px rgba(122, 122, 122, 0.4)
  }
 .squiggle {
     max-width: 60px;
 }
 
+.image-bigger {
+    width: 100%;
+    min-width: 400px;
+}
+.change-text {
+    font-family: inherit;
+}
 
 
 
@@ -181,7 +182,7 @@ span {
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 main {
-    border: 1px dashed var(--light-purple);
+
 }
 
 /* --------------- 4.1 Header ------------------------- */
@@ -206,18 +207,22 @@ nav {
     font-size: 1.5rem;
 }
 
-/*.hero-content {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    gap: 20px;*/
-/*    padding: 100px 0 200px 0;*/
-/*    margin: 0 auto;*/
-/*    max-width: 1000px;*/
-/*    align-items: center;*/
-/*    text-align: center;*/
-/*    color: var(--light-purple);*/
-/*    position: relative;*/
-/*}*/
+.outer-container-header {
+    background-size: cover;
+    background-position: top;
+}
+.inner-container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 100px 0 100px 0;
+    color: var(--light-purple);
+    position: relative;
+}
 
 .pink-button {
     background-color: var(--pink);
