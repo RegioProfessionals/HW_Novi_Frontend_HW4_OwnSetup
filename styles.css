@@ -126,10 +126,9 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-article {
     margin-bottom: 120px;
 }
+
 .inner-container-article-text {
     display: flex;
     flex-direction: column;
@@ -171,9 +170,15 @@ span {
 }
 .boxed-article-items {
     border: 1px solid var(--purple);
-    padding: 50px;
-    margin: 40px;
-    min-height: 480px;
+    padding: 40px;
+    margin: 20px 0 20px 0;
+    flex: 0 1 400px;
+    /*min-height: 300px;*/
+    /*min-width: 380px;*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 .boxed-article-title {
     color: var(--purple);
@@ -183,15 +188,21 @@ span {
 }
 
 .image-smaller {
-    max-width: 100px;
+    max-width: 75px;
 }
 .column-width-article {
-    max-width: 300px;
+    max-width: 320px;
+    padding: 15px 0 0 0;
     /*padding: 20px;*/
 }
 
-.three-box-alignment {
-    margin: 0 auto;
+.three-box-alignment{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-around;
+    margin: 40px 0 40px 0;
+
+
 }
 
 .change-text {
@@ -211,13 +222,20 @@ main {
 .section3-outer-container-3 {
     border: 3px dashed deeppink;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
+
 }
 .inner-container-3 {
+    background-size: cover;
+    border: 3px dashed darkolivegreen;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+
 
 }
-
 footer {
     background-size: cover;
     text-align: center;
