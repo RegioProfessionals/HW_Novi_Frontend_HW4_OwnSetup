@@ -68,6 +68,7 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
 }
 /* ------------------------------- 3. Layout --------------------------------------- */
 /* --------------- 3.1 Reusables ----------------------- */
+
 .hero-merriweather-3rem {
     font-family: "Merriweather", serif;
     font-weight: 700;
@@ -111,6 +112,7 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     background-color: var(--light-grey);
 }
 .article-section {
+    border: 3px dashed blue;
     background-size: cover;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -118,14 +120,11 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     padding-right: 8rem;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .inner-container-article {
     display: flex;
     justify-content: space-between;
-    /*gap: 350px;*/
-    /*align-items: stretch;*/
     width: 100%;
 }
 article {
@@ -155,13 +154,11 @@ article {
     flex: 0 1 500px;
 }
 span {
+    /*border: 4px dashed #000;*/
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
-    /*width: 1000px;*/
     flex: 1 1 400px;
     min-width: 400px;
-    border: 4px dashed #000;
     box-shadow: 0 20px 20px rgba(122, 122, 122, 0.4)
  }
 .squiggle {
@@ -172,9 +169,36 @@ span {
     width: 100%;
     min-width: 400px;
 }
+.boxed-article-items {
+    border: 1px solid var(--purple);
+    padding: 50px;
+    margin: 40px;
+    min-height: 480px;
+}
+.boxed-article-title {
+    color: var(--purple);
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.image-smaller {
+    max-width: 100px;
+}
+.column-width-article {
+    max-width: 300px;
+    /*padding: 20px;*/
+}
+
+.three-box-alignment {
+    margin: 0 auto;
+}
+
 .change-text {
     font-family: inherit;
 }
+
+
 
 
 
@@ -182,14 +206,31 @@ span {
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 main {
+}
 
+.section3-outer-container-3 {
+    border: 3px dashed deeppink;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.inner-container-3 {
+
+}
+
+footer {
+    background-size: cover;
+    text-align: center;
+    background: var(--night);
+    color: var(--light-purple);
+    padding: 20px;
 }
 
 /* --------------- 4.1 Header ------------------------- */
 
 header {
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background: linear-gradient(-20deg, var(--purple), var(--blue));
 }
 ul {
