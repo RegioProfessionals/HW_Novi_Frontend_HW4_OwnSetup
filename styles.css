@@ -1,8 +1,6 @@
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -18,18 +16,423 @@ padding: 0;
 ////////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --purple: #5722CD; /* palet name: Chrysler Blue */
+    --blue: #4B49E8; /* palet name: Majorelle Blue */
+    --pink: #ED4385; /* palet name: French Rose */
+    --night: #0C0C0C; /* palet name: Night, used for regular text  */
+    --light-purple: #F2F0FF; /* palet name: Magnolia, used for big floating words, like "hello" and "services" */
+    /* Exceptions: */
+    --light-grey: #F3F6F9; /* used for background-color of the projects */
+    --grey: #7A7A7A;
+    /* used for text service-tile */
+
+   }
+
+    /* for regular text: */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--night);
+}
+
+a:link {
+    color: var(--purple);
+    text-decoration: none;
+}
+a:link:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    color: var(--purple);
+}
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
+/* for headings: */
 
+h1, h2, h3, h4, h5, h6 .merriweather-bold {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* for regular text: */
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--night);
+}
 /* ------------------------------- 3. Layout --------------------------------------- */
-
 /* --------------- 3.1 Reusables ----------------------- */
+
+.hero-merriweather-3rem {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.hero-merriweather-2rem {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.hero-roboto-2rem {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.hero-roboto-15rem-night {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    color: var(--night);
+}
+
+.inner-container-section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 100px 40px 100px 40px;
+    color: var(--purple);
+    position: relative;
+}
+a.change-link-color:link {
+    color: var(--light-purple);
+    text-decoration: none;
+    cursor: pointer;
+}
+a.change-link-color:hover {
+    cursor: pointer;
+    color: lightpink;
+}
+
+
+.outer-container-article {
+    background-size: cover;
+    background-position: top;
+    background-color: var(--light-grey);
+}
+.article-section {
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-container-article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.inner-container-article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 500px;
+    min-width: 350px;
+    flex: 0 1 500px;
+    position: relative;
+}
+.inner-container-article-text-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 60px;
+    padding-left: 60px;
+    gap: 30px;
+    width: 500px;
+    min-width: 350px;
+    flex: 0 1 500px;
+}
+span {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 400px;
+    min-width: 400px;
+    box-shadow: 0 20px 20px rgba(122, 122, 122, 0.4)
+ }
+.squiggle {
+    max-width: 60px;
+}
+
+.image-bigger {
+    width: 100%;
+    min-width: 400px;
+}
+.boxed-article-items {
+    border: 1px solid var(--purple);
+    padding: 40px;
+    margin: 20px 0 20px 0;
+    flex: 0 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 20px 20px rgba(122, 122, 122, 0.2)
+
+
+}
+.boxed-article-title {
+    color: var(--purple);
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.image-smaller {
+    max-width: 75px;
+}
+.column-width-article {
+    max-width: 320px;
+    padding: 15px 0 0 0;
+}
+
+.three-box-alignment{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-around;
+    margin: 40px 0 40px 0;
+}
+
+.change-text {
+    font-family: inherit;
+}
+
+
+
+
 
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
+main {
+}
+
+.section3-outer-container-3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.inner-container-3 {
+    background-size: cover;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.section4-outer-container-4 {
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(-20deg, var(--purple), var(--blue));
+}
+
+/*.test-row-direction {*/
+/*    border: 1px solid var(--light-purple);*/
+/*}*/
+
+.inner-container-4 {
+    /*border: 3px dashed yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1100px;
+    height: 850px;
+    margin: 0 auto;
+}
+
+.title-form-merriweather-4rem {
+    color: var(--light-purple);
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
+.sub-title-form-roboto-15rem {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+    color: var(--light-purple);
+    text-align: center;
+}
+input {
+    width: 100%;
+    background-color: var(--light-purple);
+    border: none;
+    padding: 20px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--night);
+}
+input:focus {
+    outline: none;
+    border-color: #719ECE;
+    box-shadow: 0 0 20px #719ECE;
+}
+input::placeholder {
+    color: var(--purple);
+}
+textarea:focus {
+    outline: none;
+    border-color: #719ECE;
+    box-shadow: 0 0 30px #719ECE;
+}
+
+textarea {
+    width: 100%;
+    background-color: var(--light-purple);
+    border: none;
+    padding: 20px 20px;
+    height: 200px;
+    color: var(--night);
+    font-size: 1rem;
+    border-radius: 4px;
+}
+textarea::placeholder {
+    color: var(--purple);
+}
+.form-inline {
+    /*border: 3px dashed orange;*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 30px;
+    color: var(--light-purple);
+    height: 600px;
+    align-items: stretch;
+}
+.form-inline-button {
+    background-color: var(--pink);
+    border: none;
+    width: 200px;
+    padding: 15px 0 15px 0;
+    margin: 0 auto;
+    color: var(--light-purple);
+    font-size: 1.5rem;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 20px 20px rgba(87, 34, 205, 0.9)
+}
+.form-inline-button:focus {
+        outline: none;
+        border-color: #719ECE;
+        box-shadow: 0 0 20px #719ECE;
+    }
+
+/*.triangle-to-the-right {*/
+/*    border: 1px solid darkolivegreen;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border-left: 200px solid transparent;*/
+/*    border-top: 1vw solid var(--purple);*/
+/*    border-right: 200px solid var(--purple)*/
+/*    border-bottom: 1vw solid transparent;*/
+
+/*}*/
+
+.label-input-combination {
+    width: 100%;
+    padding: 5px 0 5px 0;
+}
+
+button:hover {
+        cursor: pointer;
+        color: var(--purple);
+}
+
+
+footer {
+    background-size: cover;
+    text-align: center;
+    background: var(--night);
+    color: var(--light-purple);
+    padding: 20px;
+}
 
 /* --------------- 4.1 Header ------------------------- */
+
+header {
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(-20deg, var(--purple), var(--blue));
+}
+ul {
+
+    display: flex;
+    gap: 5rem;
+    padding: 1rem 4rem;
+    list-style-type: none;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--light-purple);
+    padding: 1rem 4rem;/*20px 200px 20px 200px; */
+    font-size: 1.5rem;
+}
+
+.outer-container-header {
+    background-size: cover;
+    background-position: top;
+}
+.inner-container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 100px 0 100px 0;
+    color: var(--light-purple);
+    position: relative;
+}
+
+.pink-button {
+    background-color: var(--pink);
+    color: var(--light-purple);
+    font-size: 2rem;
+    padding: 15px 25px;
+    border: none;
+    max-width: 400px;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 20px 20px rgba(87, 34, 205, 0.9); /* to create blurr-effect var(--purple) needs to be tranlated into rgba.
+    This means that the variable color also needs to be changed here, unless we can calculate #hex colors into rgb. */
+}
+.header-image {
+    position: relative;
+    bottom: -4px;
+    text-align: center;
+}
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
