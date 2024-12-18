@@ -49,6 +49,7 @@ a:link {
     text-decoration: none;
 }
 
+
 /* ------------------------------- 2. Typography ----------------------------------- */
 /* for headings: */
 
@@ -112,7 +113,6 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     background-color: var(--light-grey);
 }
 .article-section {
-    border: 3px dashed blue;
     background-size: cover;
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -153,7 +153,6 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     flex: 0 1 500px;
 }
 span {
-    /*border: 4px dashed #000;*/
     display: flex;
     flex-direction: row;
     flex: 1 1 400px;
@@ -173,11 +172,11 @@ span {
     padding: 40px;
     margin: 20px 0 20px 0;
     flex: 0 1 400px;
-    /*min-height: 300px;*/
-    /*min-width: 380px;*/
     display: flex;
     flex-direction: column;
     gap: 10px;
+    box-shadow: 0 20px 20px rgba(122, 122, 122, 0.2)
+
 
 }
 .boxed-article-title {
@@ -193,7 +192,6 @@ span {
 .column-width-article {
     max-width: 320px;
     padding: 15px 0 0 0;
-    /*padding: 20px;*/
 }
 
 .three-box-alignment{
@@ -201,8 +199,6 @@ span {
     flex-basis: 20%;
     justify-content: space-around;
     margin: 40px 0 40px 0;
-
-
 }
 
 .change-text {
@@ -220,7 +216,6 @@ main {
 }
 
 .section3-outer-container-3 {
-    border: 3px dashed deeppink;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -228,14 +223,111 @@ main {
 }
 .inner-container-3 {
     background-size: cover;
-    border: 3px dashed darkolivegreen;
     padding-top: 6rem;
     padding-bottom: 6rem;
     padding-left: 8rem;
     padding-right: 8rem;
-
-
 }
+
+.section4-outer-container-4 {
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(-20deg, var(--purple), var(--blue));
+}
+
+/*.test-row-direction {*/
+/*    border: 1px solid var(--light-purple);*/
+/*}*/
+
+.inner-container-4 {
+    /*border: 3px dashed yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1100px;
+    height: 850px;
+    margin: 0 auto;
+}
+
+.title-form-merriweather-4rem {
+    color: var(--light-purple);
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+}
+.sub-title-form-roboto-15rem {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 20px 0 20px 0;
+    color: var(--light-purple);
+    text-align: center;
+}
+input {
+    width: 100%;
+    background-color: var(--light-purple);
+    border: none;
+    padding: 20px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: var(--night);
+}
+input:focus {
+    outline: none;
+    border-color: #719ECE;
+    box-shadow: 0 0 20px #719ECE;
+}
+input::placeholder {
+    color: var(--purple);
+}
+textarea:focus {
+    outline: none;
+    border-color: #719ECE;
+    box-shadow: 0 0 30px #719ECE;
+}
+
+textarea {
+    width: 100%;
+    background-color: var(--light-purple);
+    border: none;
+    padding: 20px 20px;
+    height: 200px;
+    color: var(--night);
+    font-size: 1rem;
+    border-radius: 4px;
+}
+textarea::placeholder {
+    color: var(--purple);
+}
+.form-inline {
+    /*border: 3px dashed orange;*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 30px;
+    color: var(--light-purple);
+    height: 600px;
+    align-items: stretch;
+}
+.form-inline-button {
+    background-color: var(--pink);
+    border: none;
+    width: 200px;
+    padding: 15px 0 15px 0;
+    margin: 0 auto;
+    color: var(--light-purple);
+    font-size: 1.5rem;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0 20px 20px rgba(87, 34, 205, 0.9)
+}
+.label-input-combination {
+    width: 100%;
+    padding: 5px 0 5px 0;
+}
+
+
 footer {
     background-size: cover;
     text-align: center;
