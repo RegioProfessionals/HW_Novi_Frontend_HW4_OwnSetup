@@ -49,6 +49,11 @@ a:link {
     text-decoration: none;
 }
 
+button:hover {
+    cursor: pointer;
+    color: var(--purple);
+}
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 /* for headings: */
@@ -107,6 +112,12 @@ h1, h2, h3, h4, h5, h6 .merriweather-bold {
     color: var(--purple);
     position: relative;
 }
+
+a:link#case-studies {
+    color: lightpink;
+    text-decoration: none;
+}
+
 .outer-container-article {
     background-size: cover;
     background-position: top;
@@ -325,6 +336,11 @@ textarea::placeholder {
 .label-input-combination {
     width: 100%;
     padding: 5px 0 5px 0;
+}
+
+button:hover {
+        cursor: pointer;
+        color: var(--purple);
 }
 
 
